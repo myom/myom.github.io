@@ -1,0 +1,1251 @@
+body {
+	color: #7a7a7a;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 1.5;
+}
+
+h1 {
+	color: black;
+	font-size: 2rem;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+a:hover,
+a:focus,
+a:active {
+	text-decoration: underline;
+}
+
+/* HEADER */
+header {
+	width: 100%;
+	height: 70px;
+	padding-top: 10px;
+	position: absolute;
+	background: #fff;
+}
+
+nav {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#logo {
+	display: inline-block;
+}
+
+#hamburger {
+	display: none;
+}
+
+#navbar-right {
+	margin-top: 4px;
+	float: right;
+	list-style: none;
+}
+
+#navbar-right li {
+	display: inline-block;
+	margin-left: 45px;
+}
+
+#navbar-right li a {
+	font-size: 18px;
+	color: #7a7a7a;
+	text-decoration: none;
+}
+
+#navbar-right li a.active {
+	color: black;
+
+}
+
+#navbar-right li a:hover {
+	text-decoration: underline;
+
+}
+
+/* CONTENT */
+
+#main {
+	overflow: hidden;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;	
+}
+
+a:hover,
+a:focus,
+a:active {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: white;
+}
+
+/* Inner content of each section */
+.inner {
+	position: relative;
+	margin: 0 auto;
+}
+
+/* Button */
+.cta {
+	width: 158px;
+	height: 45px;
+	border-radius: 8px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	display: inline-block;
+	padding-top: 6px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0 5px;
+}
+
+.cta a {
+	color: white;
+	font-size: 1.1rem;
+}
+
+.yellow {
+	background-color: #FBC63B;
+}
+
+.green {
+	background-color: #2ECC71;
+}
+
+
+/* HERO */
+
+#hero_section {
+	padding-top: 75px;
+	width: 100%;
+	height: 650px;
+	text-align: center;
+	position: relative;
+}
+
+#hero_section img {
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+#hero_section h1 {
+	margin-top: 20px;
+	font-weight: 100;
+}
+
+#cta-container {
+	margin: 0 auto;
+	width: 370px;
+	margin-top: 25px;
+	cursor: pointer;
+}
+
+
+/* TILTED SECTION */
+
+#tilted_section {
+	margin-top: 50px;
+	height: 530px;
+	position: relative;
+}
+
+#tilted_section .back {
+	width: 100%;
+	height: 300%;
+	position: absolute;
+}
+
+#tilted_section .back .background {
+	width: 200%;
+	height: 100%;
+	background-color: #5B95CE;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%) rotate(-15deg);
+	-moz-transform: translateX(-50%) rotate(-15deg);
+	-o-transform: translateX(-50%) rotate(-15deg);
+	-ms-transform: translateX(-50%) rotate(-15deg);
+	transform: translateX(-50%) rotate(-15deg);
+	-webkit-transform-origin: center top;
+}
+
+#tilted_section .inner {
+	width: 820px;
+	top: 20px;
+	vertical-align: top;
+}
+
+#tilted_section .inner .left {
+	width: 50%;
+}
+
+#graphic {
+	display: inline-block;
+}
+
+#kahoots-iphone {
+/*	position: relative; */
+	z-index: 1;
+	display: inline-block;
+}
+
+#kahoots-services {
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+
+}
+
+#kahoots-services img {
+	vertical-align: top;
+	position: relative;
+	z-index: 0;
+	left: -7px;
+	top: 50px;
+}
+
+#tilted_section .inner #graphic #services-orange {
+	opacity: 1;
+}
+
+#tilted_section .inner #graphic #services-orange #service-1-orange {
+	position: absolute;
+	top: 50px;
+	left: -7px;
+	opacity: 1;
+}
+
+#tilted_section .inner #graphic #services-orange #service-2-orange {
+	position: absolute;
+	top: 167px;
+	left: -7px;
+	opacity: 0;
+}
+
+#tilted_section .inner #graphic #services-orange #service-3-orange {
+	position: absolute;
+	top: 207px;
+	left: -7px;
+	opacity: 0;
+}
+
+#tilted_section .inner #graphic #services-orange #service-4-orange {
+	position: absolute;
+	top: 323px;
+	left: -7px;
+	opacity: 0;
+}
+
+#tilted_section .inner #text {
+	position: relative;
+	display: inline-block;
+	width: 360px;
+	height: 380px;
+	vertical-align: top;
+	margin-top: 80px;
+}
+
+#tilted_section .inner #text #animated-headline {
+	position: absolute;
+}
+
+#tilted_section .inner #text #animated-headline h2 {
+	font-weight: 100;
+	color: #fff;
+}
+
+#tilted_section .inner #text p {
+	position: absolute;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 100;
+	color: #fff;
+	width: 380px;
+	top: 135px;
+}
+
+#tilted_section .inner #text .app-store {
+	position: absolute;
+	width: 160.108px;
+	height: 47.439px;
+	top: 265px;
+}
+
+
+/* Animated headline */
+.words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+.words-wrapper b.is-visible {
+  position: relative;
+}
+.no-js .words-wrapper b {
+  opacity: 0;
+}
+.no-js .words-wrapper b.is-visible {
+  opacity: 1;
+}
+
+.headline.clip span {
+  display: inline-block;
+}
+.headline.clip .words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+.headline.clip .words-wrapper::after {
+  /* line */
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 2px;
+  height: 80%;
+  background-color: #aebcb9;
+}
+.headline.clip b {
+  opacity: 0;
+}
+.headline.clip b.is-visible {
+  opacity: 1;
+}
+
+
+/* PROCESS */
+
+#process_section {
+	background-color: #f4f4f4;
+	width: 100%;
+	height: 450px;
+	text-align: center;
+	position: relative;
+	padding-top: 70px;
+}
+
+#process_section h2 {
+	margin: 0 auto;
+	font-size: 28px;
+	color: #4D4D4D;
+}
+
+#process_section #icons {
+	width: 730px;
+	margin: 50px auto 25px auto;
+	overflow: hidden;
+	list-style: none;
+}
+
+#process_section .process {
+	display: inline-block;
+	width: 140px;
+	vertical-align: top;
+	margin: 15px 15px;
+}
+
+#process_section #icons .circle {
+	display: inline-block;
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	background: #fff;
+	overflow: hidden;
+}
+
+#process_section #icons .circle img {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin-top: 24px;
+}
+
+#process_section #icons .circle #first {
+	margin-right: 4px;
+}
+
+#process_section #icons .circle #second {
+	margin-right: 9px;
+}
+
+#process_section #icons .circle .last-two {
+	margin-top: 26px;
+	width: 70px;
+	height: 58.339px;
+}
+
+#process_section .text {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 18px;
+	width: 140px;
+}
+
+
+/* SCREENS */
+
+#mobile-screens {
+	display: none;
+}
+
+#screens_section {
+	position: relative;
+	width: 100%;
+	height: 1900px;
+	background: url('http://www.softerplease.com/kahoots/wp-content/uploads/2015/01/network-background.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#screens_section .inner {
+	width: 840px;
+}
+
+#iphone {
+	width: 256px;
+	height: 538.790698px;
+	background: url('http://www.softerplease.com/kahoots/wp-content/uploads/2015/01/iphone.svg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	top: 110px;
+	z-index: 200;
+}
+
+#mask {
+	position: relative;
+	overflow: hidden;
+	width: 225.272px;
+	height: 393.33px;
+	left: 18px;
+	top: 75px;
+}
+
+#screen-1, #screen-2, #screen-3 {
+	position: absolute;
+	top: -2px;
+	-webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;	
+}
+
+#screen-1 {
+	z-index: 3;
+}
+
+#screen-2 {
+	z-index: 2;
+}
+
+#screen-3 {
+	z-index: 1;
+}
+
+#screens_section #text {
+	position: absolute;
+	width: 460px;
+	height: 200px;
+	top: 230px;
+	right: 0;
+}
+
+#screens_section #text h2 {
+	color: black;
+	display: block;
+	font-size: 1.5rem;
+	line-height: 36px;
+	margin-bottom: .5em;
+}
+
+#screens_section #text #block-1, #block-2, #block-3 {
+	margin-bottom: 310px;
+	-webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;	
+}
+
+#screens_section #text p {
+	font-size: 1.1rem;
+}
+
+#screens_section #text #block-3 p {
+	margin-bottom: 1.5em;
+}
+
+#screens_section #text #block-3 .cta {
+	padding-top: 8px;
+	color: white;
+	font-size: 1.1rem;
+}
+
+/* TESTIMONIALS */
+
+#testimonials_section {
+	width: 100%;
+	height: 400px;
+	background-color: #44619D;
+	text-align: center;
+	color: #fff;
+	position: relative;
+	padding-top: 82px;
+}
+
+#testimonials_section .quote {
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: 100;
+	font-style: italic;
+	max-width: 500px;
+	margin: 0 auto;
+	
+}
+
+#testimonials_section .name {
+	margin-top: 45px;
+	font-size: 1.1rem;
+}
+
+#testimonials_section .location {
+	font-weight: 100;
+	font-style: italic;
+	font-size: 1.1rem;
+}
+
+#testimonials_section #icons {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 25px;
+	overflow: hidden;
+	list-style: none;
+}
+
+#testimonials_section #icons li {
+	display: inline-block;
+}
+
+.circle {
+	width: 110px;
+	height: 110px;
+	border-radius: 99999px;
+	background-image: url('../img/cage.jpg');
+	background-size: cover;
+	margin: 0 15px;
+}
+
+/* SECURITY */
+
+#security_section {
+	width: 100%;
+	height: 520px;
+	background-color: #F4F4F4;
+	color: #7A7A7A;
+}
+
+#security_section .inner {
+	max-width: 800px;
+	padding: 67px 0;
+}
+
+#security_section .inner h2 {
+	color: #4D4D4D;
+	display: block;
+	max-width: 450px;
+	margin: 0 auto;
+	font-size: 28px;
+	margin-bottom: 50px;
+}
+
+#security_section .inner .left {
+	float: left;
+	vertical-align: top;
+	width: 50%;
+	text-align: center;
+}
+
+#security_section .inner img {
+	display: inline-block;
+	width: 250px;
+	height: auto;
+	margin: 0 auto;
+}
+
+#security_section .inner .right {
+	width: 50%;
+	float: right;
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+#security_section .inner #text p {
+	text-align: left;
+	font-size: 1.1rem;
+}
+
+#security_section .inner .text-box {
+	margin-bottom: 15px;
+}
+
+#security_section .inner .text-box h3 {
+	display: block;
+	font-size: 1.3rem;
+	color: #7A7A7A;
+}
+
+#security_section .inner .text-box p {
+	display: block;
+	line-height: 28px;
+}
+
+
+/* EXPLORE */
+
+#explore_section {
+	width: 100%;
+	height: 330px;
+	background-color: #5B95CE;
+}
+
+#explore_section .break {
+	display: none;
+}
+
+#explore_section .inner {
+	width: 70%;
+	height: 330px;
+}
+
+#explore_section h2 {
+	padding-top: 110px;
+	font-size: 30px;
+	font-weight: 100;
+	color: #fff;
+}
+
+#explore_section .inner .app-store {
+	margin-top: 10px;
+	left: 0;
+	width: 160.108px;
+	height: 47.439px;
+}
+
+#explore_section .inner #iphone2 img {
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+/* FOOTER */
+
+#kahoots-footer {
+	background: #f4f4f4;
+	width: 100%;
+	padding-top: 30px;
+	height: 260px;
+}
+
+#kahoots-footer .inner {
+	width: 80%;
+}
+
+#kahoots-footer h3 {
+	color: #6d6e70;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+#kahoots-footer .footer-group {
+	list-style: none;
+	vertical-align: top;
+	color: #a7a7a7;
+	font-size: 14px;
+}
+
+#kahoots-footer .footer-group li a {
+	color: #a7a7a7;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#kahoots-footer .footer-group li a:hover {
+	text-decoration: underline;
+}
+
+.social {
+	clear: both;
+	margin: 0;
+}
+
+.social li {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	color: white;
+	margin: 4px 0;
+	font-size: 16px;
+}
+
+.social li a {
+	display: block;
+}
+
+.social-icon {
+	background: #6d6e70;
+	border-radius: 9999px;
+	width: 30px;
+	height: 30px;
+	margin: 10px 0;
+}
+
+.fa-facebook {
+	margin: 8px 0 0 11px;
+	color: #fff;
+}
+
+.fa-twitter {
+	margin: 7px 0 0 9px;
+	color: #fff;
+}
+
+.fa-linkedin {
+	margin: 6px 0 0 8px;
+	color: #fff;
+}
+
+.left {
+	float: left;
+}
+
+.center {
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+}
+
+.right {
+	float: right;
+}
+
+.copyright {
+	clear: both;
+	font-size: 12px;
+}
+
+.footer-group.center li p {
+	margin-bottom: 10px;
+	line-height: 1.4em;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 900px) {
+
+nav {
+	width: 93%;
+}
+
+#hero_section img {
+	width: 80%;
+}
+
+#tilted_section .inner {
+	width: 93%;
+	top: 20px;
+	vertical-align: top;
+}
+
+#tilted_section .inner .left {
+	width: 60%;
+}
+
+#tilted_section .inner .right {
+	width: 40%;
+}
+
+#tilted_section .inner #graphic #kahoots-services {
+	margin-right: 15px;
+}
+
+#tilted_section .inner #text p {
+	width: 100%;
+} 
+
+#screens_section .inner {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#screens_section #text {
+	width: 370px;
+	height: 200px;
+}
+
+#explore_section .inner {
+	width: 90%;
+}
+
+}
+
+
+@media screen and (max-width: 730px) {
+
+#logo img {
+	width: 170px;
+	margin-top: 3px;
+	padding-left: 7%;
+}
+
+nav {
+	width: 100%;
+}
+
+#navbar-right {
+	width: 100%;
+	position: absolute;
+	display: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	border-bottom: 1px solid white;
+}
+
+.hide {
+
+}
+
+#navbar-right li {
+	padding: 0px 0px 7px 25px;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	background: #5B95CE;
+}
+
+#navbar-right li a {
+	color: white;
+}
+
+
+#navbar-right li:nth-child(2),
+#navbar-right li:nth-child(4) {
+	background: #69a4df;
+}
+
+#hamburger {
+	display: block;
+	width: 30px;
+	vertical-align: top;
+	float: right;
+	margin-top: 2px;
+	padding-right: 3%;
+	cursor: pointer;
+	text-align: right;
+}
+
+#hamburger img {
+	width: 100%;
+}
+
+#hamburger svg {
+	stroke: #666666;
+}
+#hamburger svg:hover {
+	stroke: #5B95CE;
+}
+
+#hero_section {
+	height: 400px;
+}
+
+#hero_section img {
+	margin-top: 50px;
+}
+
+#tilted_section {
+	height: 850px;
+}
+
+
+#tilted_section .inner .left {
+	width: 100%;
+	text-align: center;
+}
+
+#tilted_section .inner .right {
+	width: 100%;
+	text-align: center;
+}
+
+#animated-headline {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#animated-headline h2 {
+	text-align: center;
+	width: 100%;
+}
+
+#tilted_section .inner #text {
+	margin-top: 30px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#tilted_section .inner #text p{
+	position: relative;
+	margin-top: 0px;
+	margin: 0 auto;
+	width: 90%;
+	left: 0;
+	right: 0;
+}
+
+#tilted_section .inner #text .app-store {
+	position: relative;
+	width: 160.108px;
+	height: 47.439px;
+	top: 180px;
+}
+
+#process_section {
+	height: auto;
+	padding-bottom: 70px;
+}
+
+#process_section h2 {
+	width: 93%;
+
+}
+
+#process_section #icons {
+	width: 400px;
+}
+
+#iphone {
+	display: none;
+}
+
+#screens_section {
+	padding: 70px 0 30px 0;
+	height: auto;
+}
+
+#screens_section #text {
+	display: none;
+}
+
+#mobile-screens {
+	display: block;
+}
+
+#mobile-screens .mobile-iphone {
+	width: 200px;
+	height: 420px;
+	background: url('../img/iphone.svg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin: 0 auto;
+	position: relative;
+}
+
+#mobile-screens .screen1 img,
+#mobile-screens .screen2 img,
+#mobile-screens .screen3 img {
+	position: absolute;
+	width: 176px;
+	height: auto;
+	top: 58px;
+	left: 13.4px;
+}
+
+#mobile-screens .mobile-text {
+	text-align: center;
+	width: 80%;
+	margin: 20px auto 65px auto;
+}
+
+#mobile-screens .mobile-text h2 {
+	color: black;
+	display: block;
+	font-size: 1.5rem;
+	line-height: 36px;
+	margin-bottom: .5em;
+}
+
+#mobile-screens .mobile-text p {
+	font-size: 1.1rem;
+}
+
+#mobile-screens .mobile-text .cta {
+	margin-top: 65px;
+}
+
+#testimonials_section .inner {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#security_section .inner {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#security_section .inner img {
+	margin-top: 30px;
+	width: 70%;
+}
+
+#explore_section .break {
+	display: block;
+}
+
+#explore_section h2 {
+	line-height: 1.1em;
+	margin-bottom: 20px;
+}
+
+#kahoots-footer {
+	height: auto;
+}
+
+#kahoots-footer .inner {
+	width: 90%;
+}
+
+#kahoots-footer .left {
+	width: 50%;
+	text-align: center;
+}
+
+#kahoots-footer .left .social li {
+	text-align: left;
+}
+
+#kahoots-footer .center {
+	float: right;
+	position: static;
+	transform: none;
+	width: 50%;
+	text-align: center;
+}
+
+#kahoots-footer .right {
+	display: block;
+	position: relative;
+	clear: both;
+	float: none;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding-top: 40px;
+}
+
+#kahoots-footer .copyright {
+	padding: 30px 0 15px 0;
+	text-align: center;
+}
+
+}
+
+
+@media screen and (max-width: 530px) {
+
+#main h1 {
+	width: 75%;
+	margin: 20px auto;
+	line-height: 1.2em;
+}
+
+#tilted_section {
+	height: 800px;
+}
+
+#tilted_section .right {
+	text-align: center;
+}
+
+#kahoots-iphone {
+	width: 50%;
+}
+
+#kahoots-iphone img {
+	width: 100%;
+}
+
+#kahoots-services {
+	top: -25px;
+}
+
+#security_section {
+	height: auto;
+	text-align: center;
+}
+
+#security_section .inner h2 {
+}
+
+#security_section .inner .left {
+	float: none;
+	display: block;
+	width: 100%;
+}
+
+#explore_section .inner {
+	height: auto;
+}
+
+#security_section .inner img {
+	width: 170px;
+	margin-top: 0;
+}
+
+
+#security_section .inner .right {
+	float: none;
+	display: block;
+	width: 100%;
+}
+
+#security_section .inner #text p {
+	text-align: center;
+}
+
+#explore_section {
+	height: auto;
+}
+
+#explore_section .break {
+	display: none;
+}
+
+#explore_section h2 {
+	text-align: center;
+	padding-top: 70px;
+}
+
+#explore_section .inner .app-store {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+#explore_section .inner #iphone2 img {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+
+}
+
+@media screen and (max-width: 390px) {
+
+#cta-container {
+	width: 100%;
+}
+
+#hero_section .cta {
+	width: 43%;
+}
+
+#kahoots-iphone {
+	width: 160px;
+}
+
+#kahoots-iphone img {
+	width: 160px;
+	margin-right: 80px;
+}
+
+#kahoots-services img {
+	width: 110px;
+	top: 55px;
+}
+
+#service-1-orange {
+	margin-top: 5px;
+	left: -7px;
+}
+
+#service-2-orange {
+	margin-top: -26px;
+}
+
+#service-3-orange {
+	margin-top: -37px;
+}
+
+#service-4-orange {
+	margin-top: -68px;
+}
+
+#tilted_section {
+	height: 740px;
+}
+
+#tilted_section .inner {
+	width: 100%;
+}
+
+#tilted_section .inner .left {
+	margin-left: 10px;
+}
+
+#tilted_section .inner .right {
+	background: #5B95CE;
+}
+
+#process_section .inner {
+	width: 90%;
+}
+
+#process_section #icons {
+	width: 320px;
+}
+
+
+}
