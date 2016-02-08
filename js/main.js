@@ -85,19 +85,7 @@ var windowHeight = $(window).height();
     $('#nav-logo').click(function(){
         $("body").stop(true,true).animate({ scrollTop: 0 }, '1200', 'swing');
     });
-
-/* "See More" down-arrow CTA
-   -----------------------------------------------------*/
-    $('#see-more').click(function(){
-        if (windowWidth > 400 ){
-            aboutPosition = $('#about').offset().top - $('#nav-container').height();
-        } else {
-            aboutPosition = $('#about').offset().top;
-        }
-
-        $("html, body").animate({scrollTop:aboutPosition}, '1200', 'swing');
-    })
-
+    
 
 /* Link to contact footer
    -----------------------------------------------------*/
