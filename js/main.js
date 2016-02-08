@@ -55,12 +55,22 @@ var windowHeight = $(window).height();
             if (scale > 1) 
                 scale = 1;
 
-                // if (isDesktop | isTablet | isSmartphone) {
+                if (isDesktop | isTablet | isSmartphone) {
                     container.find('.banner-container').css({transform: 'scale('+(1-scale/3.5)+')'});
                     container.find('.banner-text').css({'margin-top': -150+scale*400});
-                // } else {
-                //     container.find('.banner-container').css({transform: ''});
-                // }
+                } else {
+                    container.find('.banner-container').css({transform: ''});
+                }
+
+                if (windowWidth <= 600) {
+                    aboutPosition = $('#about').offset().top;
+                    if (scrollTop > 778) {
+                        console.log(scrollTop);
+                        $('#nav-container').css({'position': 'absolute'});
+                    } else {
+                        $('#nav-container').css({'position': 'fixed'});
+                    }
+                }
 
                 if ($('.project-page')[0]) {
                     container.find('.banner-background').css({opacity: scale/2});
@@ -86,7 +96,7 @@ var windowHeight = $(window).height();
         }
 
         $("html, body").animate({scrollTop:aboutPosition}, '1200', 'swing');
-    });
+    })
 
 
 /* Link to contact footer

@@ -1209,7 +1209,6 @@ figure#project-4 {
 @media only screen and (max-width: 480px) {
 
 	/* General */
-
 	#copyright p {
 		font-size: 1.3em;
 		letter-spacing: 3px;
@@ -1245,11 +1244,6 @@ figure#project-4 {
 @media only screen and (max-width: 400px) {
 
 	/* General */
-	#nav-container {
-		position: relative;
-		top: 0;
-	}
-
 	#nav-contact svg {
 		display: none;
 	}
