@@ -55,12 +55,12 @@ var windowHeight = $(window).height();
             if (scale > 1) 
                 scale = 1;
 
-                if (isDesktop) {
+                // if (isDesktop | isTablet | isSmartphone) {
                     container.find('.banner-container').css({transform: 'scale('+(1-scale/3.5)+')'});
                     container.find('.banner-text').css({'margin-top': -150+scale*400});
-                } else {
-                    container.find('.banner-container').css({transform: ''});
-                }
+                // } else {
+                //     container.find('.banner-container').css({transform: ''});
+                // }
 
                 if ($('.project-page')[0]) {
                     container.find('.banner-background').css({opacity: scale/2});
