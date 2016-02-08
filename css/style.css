@@ -144,7 +144,7 @@ a {
    -----------------------------------------------------*/
 .banner {
 	width: 100%;
-	height: 690px;
+	height: 100vh;
 	overflow: hidden;
 	-webkit-transform: scale(1.35);
 	-ms-transform: scale(1.35);
@@ -155,43 +155,49 @@ a {
 	background: url('../img/arches.png') center center;
 	position: relative;
 	width: 100%;
-	height: auto;
+	height: 100vh;
 }
 
 .banner-background {
-	background: #0a0c12;
-	opacity: 0.02;
-	width: 100%;
-	height: 690px;
+   	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 10 10'> <path d='M0 10 L10 10 L10 0' fill='#0a0c12' /></svg>") center center no-repeat;
+    background-size:100% 100%, auto;
+    width: 100%;
+	height: 100vh;
+	opacity: 0.8;
 }
 
 .banner-text {
 	position: absolute;
-	left: 0;
-	right: 0;
-	margin-top: 330px;
+	background-color: #0a0c12;
+	width: 300px;
+	height: 300px;
+	border-radius: 500px;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
 	z-index: 999;
 }
 
 #tagline {
-	position: relative;
+	position: absolute;
+	top: 108px;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 800;
-	font-size: 4em;
+	font-weight: 700;
+	font-size: 3em;
 	letter-spacing: 6px;
 	text-transform: uppercase;
 	color: #fff;
-	-webkit-text-stroke: 1px #0a0c12;
-	text-stroke: 1px #0a0c12;
 }
 	
 #my-name {
 	position: relative;
+	top: 175px;
 	margin-top: 10px;
-	font-weight: 400;
-	font-size: 1.6em;
+	font-weight: 300;
+	font-size: 1.2em;
 	letter-spacing: 2px;
-	color: #0a0c12;
+	color: #fff;
+
 	-webkit-animation: fadeInUp 1.5s;
    	-webkit-animation-iteration-count: 1
 }
@@ -199,14 +205,14 @@ a {
 #see-more {
 	position: relative;
 	display: block;
-	top: 45px;
+	top: 225px;
 	width: 20px;
 	height: 12.346px;
 	margin: 0 auto;
 }
 
 #see-more:hover polygon {
-	fill: #0a0c12;
+	fill: #f58a52;
 	-webkit-transition: all .35s ease-out;
 	-ms-transition: all .35s ease-out;
 	transition: all .35s ease-out;
@@ -622,12 +628,17 @@ figure#project-4 {
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
+	height: auto;
+}
+
+.project-page .banner-container {
+	height: auto;
 }
 
 .project-page .banner-background {
 	position: absolute;
 	top: 0;
-	opacity: 0;
+	background: none;
 }
 
 #pieces-of-there .banner,
@@ -1035,27 +1046,11 @@ figure#project-4 {
 }
 
 
-/******************************************************/
+/********************************************************************************************************************/
 /* MEDIA QUERIES
-/******************************************************/
+/********************************************************************************************************************/
 
 @media only screen and (max-width: 900px) {
-
-	/* Home */
-	#home .banner {
-		height: 550px;
-		-webkit-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		transform: scale(1.1);
-	}
-
-	.banner-text {
-		margin-top: 270px;
-	}
-
-	#see-more {
-		top: 35px;
-	}
 
 	figure.project {
 		width: 100%;
@@ -1067,12 +1062,6 @@ figure#project-4 {
 
 	figure.project p {
 		font-size: 1em;
-	}
-
-	/* Project Page */
-
-	.banner {
-		height: auto;
 	}
 
 }
@@ -1217,16 +1206,6 @@ figure#project-4 {
 
 }
 
-@media only screen and (max-width: 600px) {
-	.banner-text {
-		margin-top: 240px;
-	}
-
-	#tagline {
-		word-spacing: 200px;
-	}
-}
-
 @media only screen and (max-width: 480px) {
 
 	/* General */
@@ -1237,26 +1216,13 @@ figure#project-4 {
 	}
 
 	/* Home */
-	#home .banner {
-		height: 420px;
-	}
-
 	.banner-text {
-		margin-top: 180px;
+		-webkit-transform: scale(0.90);
+		-ms-transform: scale(0.90);
+		transform: scale(0.90);
 	}
 
-	#tagline {
-		letter-spacing: 4px;
-	}
-
-	#my-name {
-		-webkit-text-stroke: .1px #fff;
-	}
-
-	#see-more {
-		top: 25px;
-	}
-
+	/* About */
 	#about {
 		padding: 50px 5% 50px 5%;
 	}
@@ -1289,20 +1255,14 @@ figure#project-4 {
 	}
 
 	/* Home */
-	#home .banner {
-		height: 360px;
-	}
-
 	.banner-text {
-		margin-top: 125px;
-	}
-
-	#see-more {
-		top: 25px;
+		-webkit-transform: scale(0.80);
+		-ms-transform: scale(0.80);
+		transform: scale(0.80);
+		margin-top: -170;
 	}
 
 	/* Project Page */
-
 	.project-client p,
 	.project-content {
 		font-size: 16px;

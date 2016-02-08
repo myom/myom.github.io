@@ -57,7 +57,7 @@ var windowHeight = $(window).height();
 
                 if (isDesktop) {
                     container.find('.banner-container').css({transform: 'scale('+(1-scale/3.5)+')'});
-                    container.find('.banner-text').css({'margin-top': 330+scale*400});
+                    container.find('.banner-text').css({'margin-top': -150+scale*400});
                 } else {
                     container.find('.banner-container').css({transform: ''});
                 }
@@ -65,7 +65,7 @@ var windowHeight = $(window).height();
                 if ($('.project-page')[0]) {
                     container.find('.banner-background').css({opacity: scale/2});
                 } else {
-                    container.find('.banner-background').css({opacity: 0.02+scale});
+                    container.find('.banner-background').css({opacity: 0.8+scale/2});
                 }
     };
 
