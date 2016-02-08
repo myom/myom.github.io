@@ -1237,6 +1237,11 @@ figure#project-4 {
 @media only screen and (max-width: 400px) {
 
 	/* General */
+	#nav-container {
+		position: relative;
+		/*z-index: -99;*/
+	}
+
 	#nav-contact svg {
 		display: none;
 	}
@@ -1271,6 +1276,10 @@ figure#project-4 {
 		width: 0;
 		padding: 0;
 		height: 60px;
+	}
+
+	.arrow {
+		z-index: 9999;
 	}
 
 	.arrow h3 {
