@@ -48,7 +48,7 @@ a {
 /* NAV
    -----------------------------------------------------*/
 #nav-container {
-	position: fixed;
+	position: relative;
 	z-index: 1000;
 	height: 57px;
 	width: 100%;
@@ -169,6 +169,7 @@ a {
 .banner-text {
 	position: absolute;
 	background-color: #0a0c12;
+	color: #fff;
 	width: 300px;
 	height: 300px;
 	border-radius: 500px;
@@ -176,6 +177,19 @@ a {
 	left: 50%;
 	margin: -150px 0 0 -150px;
 	z-index: 999;
+	-webkit-transition: all .35s ease out;
+	-ms-transition: all .35s ease out;
+	transition: all .35s ease out;
+}
+
+.banner-text:hover {
+	background-color: #fff;
+	border: .1px solid #0a0c12;
+	color: #0a0c12;
+}
+
+.banner-text:hover .banner-background {
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 10 10'> <path d='M0 10 L0 0 L10 0' fill='#0a0c12' /></svg>") center center no-repeat;
 }
 
 #tagline {
@@ -186,7 +200,6 @@ a {
 	font-size: 3em;
 	letter-spacing: 6px;
 	text-transform: uppercase;
-	color: #fff;
 }
 	
 #my-name {
@@ -196,7 +209,6 @@ a {
 	font-weight: 300;
 	font-size: 1.2em;
 	letter-spacing: 2px;
-	color: #fff;
 
 	-webkit-animation: fadeInUp 1.5s;
    	-webkit-animation-iteration-count: 1
@@ -488,11 +500,15 @@ figure#project-4 {
 /* PROJECT PAGE
 /******************************************************/
 
+/* General */
+.project-page #nav-container {
+	position: fixed;
+}
+
 /* Arrow Navigation */
-.project-nav {
+.arrow {
 	position: fixed;
 	top: 50%;
-	width: 100%;
 	height: 110px;
 	z-index: 900;
     -webkit-transform: translateY(-30%);
@@ -501,11 +517,11 @@ figure#project-4 {
 }
 
 .arrow.prev {
-	float: left;
+	left: 0;
 }
 
 .arrow.next {
-	float: right;
+	right: 0;
 }
 
 .project-rectangle {
@@ -673,6 +689,7 @@ figure#project-4 {
 	width: 100%;
 	background: #fff;
 	color: #666;
+	border-top: 1px solid #0a0c12;
 }
 
 .project-client .text-box {
@@ -700,6 +717,7 @@ figure#project-4 {
 	width: 100%;
 	background: #414042;
 	color: #fff;
+	border-top: 1px solid #0a0c12;
 }
 
 .inner {
@@ -734,23 +752,19 @@ figure#project-4 {
 }
 
 .project-details .col ul li a {
-	font-size: 16px;
-	color: #e8c24b;
-}
-
-.project-details .col ul li a:hover {
+	color: #fff;
 	text-decoration: underline;
 }
 
 .project-content {
-	position: relative;
 	height: auto;
 	width: 100%;
 	background: #fff;
 	font-size: 18px;
 	color: #666;
 	text-align: left;
-	box-shadow: 0 8px 60px 8px rgba(0,0,0,0.33);
+	border-top: 1px solid #0a0c12;
+	border-bottom: 1px solid #0a0c12;
 }
 
 .project-content .inner {
@@ -804,6 +818,7 @@ figure#project-4 {
 	display: block;
 	width: 100%;
 	padding: 5px 0 5px 0;
+	border-bottom: 1px solid #0a0c12;
 	background: #0a0c12;
 	color: #fff;
 	font-weight: 400;
@@ -818,11 +833,7 @@ figure#project-4 {
 }
 
 .project-content .thumbnail:hover {
-	box-shadow: -10px 10px 1px 0 rgba(150,150,150,.2);
-}
-
-.project-content .thumbnail:hover span {
-	color: #e8c24b;
+	border: 2px solid #0a0c12;
 }
 
 .project-content .half {
@@ -891,7 +902,7 @@ figure#project-4 {
 .design-sprint hr {
 	display: block;
 	border: 0;
-	border-top: 5px solid #e8c24b;
+	border-top: 5px solid #0a0c12;
 	margin: 0 80px;
 }
 
@@ -915,10 +926,11 @@ figure#project-4 {
 	height: 40px;
 	line-height: 29px;
 	border-radius: 80px;
-	border: 5px solid #e8c24b;
+	border: 5px solid #0a0c12;
 	background: #fff;
-	color: #e8c24b;
+	color: #0a0c12;
 	font-weight: 700;
+	text-decoration: none;
 }
 
 .design-sprint ul li:nth-child(4) a span {
@@ -929,7 +941,7 @@ figure#project-4 {
 }
 
 .design-sprint ul li a:hover {
-	background: #e8c24b;
+	background: #0a0c12;
 	color: #fff;
 	text-decoration: none;
 }
@@ -945,7 +957,7 @@ figure#project-4 {
 }
 
 .design-sprint .active {
-	background: #e8c24b;
+	background: #0a0c12;
 	color: #fff;
 }
 
@@ -1202,6 +1214,14 @@ figure#project-4 {
 @media only screen and (max-width: 480px) {
 
 	/* General */
+	#nav-container {
+		position: relative;
+	}
+
+	.project-page #nav-container {
+		position: relative;
+	}
+
 	#copyright p {
 		font-size: 1.3em;
 		letter-spacing: 3px;
@@ -1239,7 +1259,6 @@ figure#project-4 {
 	/* General */
 	#nav-container {
 		position: relative;
-		/*z-index: -99;*/
 	}
 
 	#nav-contact svg {
@@ -1248,9 +1267,9 @@ figure#project-4 {
 
 	/* Home */
 	.banner-text {
-		-webkit-transform: scale(0.80);
-		-ms-transform: scale(0.80);
-		transform: scale(0.80);
+		-webkit-transform: scale(0.70);
+		-ms-transform: scale(0.70);
+		transform: scale(0.70);
 		margin-top: -170;
 	}
 

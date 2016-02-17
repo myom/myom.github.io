@@ -62,13 +62,23 @@ var windowHeight = $(window).height();
                     container.find('.banner-container').css({transform: ''});
                 }
 
-                if (windowWidth <= 600) {
-                    aboutPosition = $('#about').offset().top;
+                // if (windowWidth <= 600) {
+                //     aboutPosition = $('#about').offset().top;
+                //     if (scrollTop > aboutPosition) {
+                //         console.log(scrollTop);
+                //         $('#nav-container').css({'position': 'relative'});
+                //     } else {
+                //         $('#nav-container').css({'position': 'fixed'});
+                //     }
+                // }
+
+                aboutPosition = $('#about').offset().top;
+                if (windowWidth >= 480) {
                     if (scrollTop > aboutPosition) {
-                        console.log(scrollTop);
-                        $('#nav-container').css({'position': 'absolute'});
-                    } else {
                         $('#nav-container').css({'position': 'fixed'});
+                    } else {
+                        $('#nav-container').css({'position': 'relative'});
+
                     }
                 }
 

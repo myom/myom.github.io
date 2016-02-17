@@ -32,7 +32,7 @@
 		</div>
 	</header>
 
-	<nav class="project-nav">
+	<!-- <nav class="project-nav"> -->
 		<a class="arrow prev" href="pieces-of-there">
 			<div class="inner-arrow"></div>
 			<div class="project-rectangle"><h3>Knosey</h3></div>
@@ -41,7 +41,7 @@
 			<div class="inner-arrow"></div>
 			<div class="project-rectangle"><h3>Wyndham Agent</h3></div>
 		</a>
-	</nav>
+	<!-- </nav> -->
 
 	<section class="banner">
 		<div class="banner-container">
@@ -53,8 +53,8 @@
 
 	<section class="project-client">
 		<div class="text-box">
-			<h2>Wyndham Vacation Ownership (Consumer)</h2>
-			<p>Designed the consumer experience for the world's largest vacation ownership company that accommodates more than 900,000 owner families at over 200 resorts worldwide, with processes ranging from comparing resorts and booking vacations to learning about WVO offerings and managing membership accounts.</p>
+			<h2>Wyndham Vacation Ownership</h2>
+			<p>Designed the <b>consumer portal</b> experience for the world's largest vacation timeshare company, with processes ranging from comparing resorts and booking vacations to learning about product offerings and managing membership accounts.</p>
 		</div>
 	</section>
 
@@ -64,12 +64,6 @@
 				<div class="title">Client</div>
 				<ul>
 					<li>Wyndham Vacation Ownership (WVO)</li>
-				</ul>
-			</div>
-			<div class="col">
-				<div class="title">Role</div>
-				<ul>
-					<li>UX</li>
 				</ul>
 			</div>
 			<div class="col">
@@ -87,29 +81,19 @@
 	<section class="project-content">
 		<div class="inner">
 			<h2>Problem</h2>
-			<p>
-				<ul>
-					<li>Timeshare owners at Wyndham Vacation Ownership (WVO) are mostly retired folk and need a customer portal that is organized and easy to use. The existing consumer user interface is outdated and often resorts (hehe...) to its customer service line to support requests and inquiries. </li>
-					<li>Thus, WVO's ask was a complete optimization of WVO's consumer user interface (CUI). Having been provided user evaluations/feedback and a project scope of the site's major feature requirements, my team was responsible for analyzing major development components and strategically organizing them into different branches of the site. After establishing this framework, we proceeded to thoughtfully design each functional piece to produce a cohesive and effortless experience.</li>
-					<li>The biggest challenge of all was striving to create this simple experience while incorporating WVO's myriad complex business rules. This required constant communication with WVO's product owners and developers to ensure that we had a full grasp on the product requirements and technical feasibility.</li>
-					<li>While some of the travel industry's beasts such as Kayak and AirBnB provided good insight into smart design patterns, one of the biggest lessons I learned is that best practices will falter if the design does not align with the business model, especially given WVO's unique program rules and user needs.
-					</li>
-				</ul>
-			</p>
+			<p>Timeshare owners at Wyndham Vacation Ownership (WVO) are mostly older, retired folk who need to search and book vacations, utilize points, and manage accounts, among many other complex tasks. The existing consumer portal is outdated and often leaves users to resort (hah..) to its customer service line for support requests and inquiries.</p>
+			<p>Thus, WVO's ask was a complete optimization of WVO's consumer portal to produce an organized, education, and effortless experience.</p>
+			</br>
 
 			<h2>Process</h2>
+			<p>I primarily worked alongside a senior UX designer with oversight from our VP of UX. The full team also included an account manager, a producer, a business analyst, two visual designers, and two developers.</p>
+			<p>The UX team underwent 2-week sprints for each major development component. My tasks involved:</p>
 				<ul>
-					<li>I primarily worked alongside a senior UX designer with oversight from our VP of UX. The full team also included an account manager, a producer, a business analyst, two visual designers, and two developers.</li>
-					<li>On the UX end of this 6-month-long project, we underwent 2-week sprints for each major development component. Each sprint began with the client providing feature requirements and associated business rules.</li>
-				</ul>
-
-			<h2>Tasks for each design sprint:</h2>
-				<ul>
-					<li><u>Problem Exploration</u></br>Analyzed feature requirements, business rules and high-level user needs.</li>
+					<li><u>Problem Exploration</u></br>Analyzed feature requirements, all sorts of esoteric business rules, and high-level user needs.</li>
 					</br>
-					<li><u>Information Architecture</u></br>Organized data and requirements into spreadsheets/matrices, Created sitemaps and userflows.</li>
+					<li><u>Information Architecture</u></br>Organized data and requirements into spreadsheets/matrices, Developed sitemaps and userflows.</li>
 					</br>
-					<li><u>Competitive Analysis</u></br>Examined best practices and common design patterns for particular features (e.g., resort listings, filtering, sorting, map views, forms).</li>
+					<li><u>Competitive Analysis</u></br>Examined best practices and common design patterns for particular features (e.g., results listings, filtering, sorting, map views, forms).</li>
 					</br>
 					<li><u>Interaction Design</u></br>Mapped out interaction models and error studies, Translated IA into low-fidelity wireframes.</li>
 				</ul>
@@ -117,35 +101,41 @@
 
 			<hr>
 			</br>
-			<p>In this section, I go into detail about my design thinking and decisions while working on one particular feature: the <b><u>Availability Search Calendar</u></b>.</p>
+			<p>In this section, I go into detail about my design thinking and decisions while working on one particular feature: the Resort Availability Search.</p>
 
-			<p>WVO's philosophy is that the customer should never reach a dead end while searching for a vacation. While most online travel agencies display only the resorts and rooms that are available for the selected date range, WVO wanted to be very flexible and allow owners to explore options and "just scroll through what's available." Thus, our team designed the availability search to accommodate for a search as general as "Anytime" and "Anywhere".</p>
-			<p><b>Challenge:</b> WVO's program-wide rules, resort-specific rules, and the owner's membership type (e.g., Standard vs. VIP Silver) synchronously determine whether or not a selected date range can be booked. For example, a date range selection may be valid for one resort but violates a minimum length of stay requirement for another resort. But since we don't want to block the customer from viewing that invalid resort, we configured the date selection logic as follows:</p>
+			<div class="center"><a href="img/wyndham-consumer/____.png" rel="lightbox" title="Resort Availability Search"><div class="thumbnail half"><span>Resort Availability Search</span><img src="img/wyndham-consumer/____.png" alt="Resort Availability Search"></div></a></div>
+
+			<p>WVO's philosophy is that the customer should rarely reach a dead end while searching for a vacation. Achieving this was difficult considering that WVO's program-wide rules, resort-specific rules, and the owner's membership type all come into play to determine whether or not a resort and unit can be booked for a selected date range.</p>
+			<p> For example, a date range selection may be valid for one resort but violates a minimum length of stay requirement for another resort. But since we don't want to block the customer from viewing that invalid resort, we configured the date selection logic to allow a Dateless Search; this enables the user to be flexible with dates, locations, and room types</p>
+
+			<p>Given the complexity of the booking requirements, I sifted through WVO resorts' rules and deduced three possible date-related error scenarios:
 			<ol>
-				<li>Dated Search - follows the standard online travel agency (OTA) practice</li>
-				<li>Dateless Search - enables the user to be flexible with dates, locations, and room types
+				<li>user selects a check-in date that violates resort's check-in day of week rule</li>
+				<li>user selects a check-out date that violates resort's check-out day of week rule</li>
+				<li>user selects a check-out date that does not meet resort's minimum/maximum length of stay rule.
+				</li>
 			</ol>
+			<p>I used this framework to cover the bases for error handling.</p>
 
-			<p>My team adopted an agile design process which entailed daily stand-ups and scrumboarding to visually communicate and allocate responsibilities.</p>
-			<img class="not-thumbnail" src="img/kahoots/scrum.gif" alt="Scrum board">
-				<hr>
-			<p>First, we constructed user personas whom we felt would connect with a variety of businesses and benefit from quick access to trustworthy referrals. We then conducted phone interviews with people in our networks who matched these persona types:</p>
-			<ul>
-				<li>Event planners (i.e., weddings, parties)</li>
-				<li>Realtors</li>
-				<li>Home owners</li>
-				<li>Home inspectors</li>
-				<li>Parents with involved children</li>
-			</ul>
-			<div class="center"><a href="img/kahoots/user-persona.jpg" rel="lightbox" title="User Persona"><div class="thumbnail half"><span>User Persona Example</span><img src="img/kahoots/user-persona.jpg" alt="User persona"></div></a></div>
-			<p>In our wireframing process, we initially focused on contriving a captivating hero banner. Making a great first impression is key for any landing page. Below were some of my ideas:</p>
-			<a href="img/kahoots/hero-1.png" rel="lightbox-1" title="Hero 1"><div class="thumbnail half"><span>Hero 1</span><img src="img/kahoots/hero-1.png" alt="Hero 1"></div></a>
-			<a href="img/kahoots/hero-2.png" rel="lightbox-1" title="Hero 2"><div class="thumbnail half"><span>Hero 2</span><img src="img/kahoots/hero-2.png" alt="Hero 2"></div></a>
-			<p>These were early wireframe concepts:</p>
-			<a href="img/kahoots/wireframe-1.jpg" rel="lightbox-2" title="Wireframe 1"><div class="thumbnail half"><span>Wireframe 1</span><img src="img/kahoots/wireframe-1.jpg" alt="Wireframe 1"></div></a>
-			<a href="img/kahoots/wireframe-2.jpg" rel="lightbox-2" title="Wireframe 2"><div class="thumbnail half"><span>Wireframe 2</span><img src="img/kahoots/wireframe-2.jpg" alt="Wireframe 2"></div></a>	
-			<p>After several rounds of receiving feedback and redesigning, I designed/coded a responsive site.</p>
-			<a href="work/kahoots/index.html" target="_blank"><div class="not-thumbnail" id="kahoots-prototype"><img src="img/kahoots/prototype.gif" alt="Prototype"></div></a>
+			<p>Initially, our team explored the option to view availability for all room types at the same time but ultimately concluded that this treatment would display too much information and confuse the user since it's not quite representative of the standard monthly calendar.</p>
+
+			<div class="center"><a href="img/wyndham-consumer/____.png" rel="lightbox" title="Resort Availability Search"><div class="thumbnail half"><span>Resort Availability Search</span><img src="img/wyndham-consumer/____.png" alt="Resort Availability Search"></div></a></div>
+
+			<p>Subsequently, we proceeded with allowing the user to view available dates for one room type at a time.</p>
+
+			<div class="center"><a href="img/wyndham-consumer/____.png" rel="lightbox" title="Resort Availability Search"><div class="thumbnail half"><span>Resort Availability Search</span><img src="img/wyndham-consumer/____.png" alt="Resort Availability Search"></div></a></div>
+
+			<p>Shown here is an error state that captures the check-in day rule at this particular resort. I initially wanted to take a preventative approach and display this selected date (Sept. 16) as unavailable from the start. On hover, a message could indicate why exactly the room type is unavailable on this date. However, we were told that WVO's CMS wouldn't be able to simultaneously display multiple messages if the case arises, and so we adopted this responsive erroring approach.</p>
+
+			<div class="center"><a href="img/wyndham-consumer/____.png" rel="lightbox" title="Resort Availability Search"><div class="thumbnail half"><span>Resort Availability Search</span><img src="img/wyndham-consumer/____.png" alt="Resort Availability Search"></div></a></div>
+
+			<p>But on selection of a check-in date, the system can narrow down booking restrictions considerably enough so as to load in the resort's maximum length of stay rule, as shown.</p>
+
+			<div class="center"><a href="img/wyndham-consumer/____.png" rel="lightbox" title="Resort Availability Search"><div class="thumbnail half"><span>Resort Availability Search</span><img src="img/wyndham-consumer/____.png" alt="Resort Availability Search"></div></a></div>
+
+			<p>On selection of valid check-in and check-out dates, the user can proceed to book the room, or if desired, run a new search with these dates. I felt that including the latter option would yet again accommodate for flexibility since the user may be interested in viewing other resorts with the selected date range in mind.</p>
+
+			</br>
 			<div class="button"><a href="work/kahoots/index.html" target="_blank">View coded prototype</a></div>
 		</div>
 	</section>
