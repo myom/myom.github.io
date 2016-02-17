@@ -1130,7 +1130,7 @@ figure#project-4 {
 		padding: 27.4px 20px;
 	}
 
-	.project-nav h3 {
+	.arrow h3 {
 		font-size: 12px;
 	}
 
@@ -1284,21 +1284,11 @@ figure#project-4 {
 		line-height: 26.66666667px;
 	}
 
-	.project-nav {
-		position: fixed;
-		top: 18px;
-		height: 60px;
-	}
-
 	.project-rectangle {
 		opacity: 0;
 		width: 0;
 		padding: 0;
 		height: 60px;
-	}
-
-	.arrow {
-		z-index: 9999;
 	}
 
 	.arrow h3 {
