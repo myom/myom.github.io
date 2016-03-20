@@ -48,7 +48,7 @@ a {
 /* NAV
    -----------------------------------------------------*/
 #nav-container {
-	position: relative;
+	position: fixed;
 	z-index: 1000;
 	height: 57px;
 	width: 100%;
@@ -159,7 +159,7 @@ a {
 
 .banner-background {
    	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 10 10'> <path d='M0 10 L10 10 L10 0' fill='#0a0c12' /></svg>") center center no-repeat;
-    background-size:100% 100%, auto;
+    background-size: 100% 100%, auto;
     width: 100%;
 	height: 100vh;
 	opacity: 0.8;
@@ -176,16 +176,17 @@ a {
 	left: 50%;
 	margin: -150px 0 0 -150px;
 	z-index: 999;
+	cursor: pointer;
 	-webkit-transition: all .35s ease out;
 	-ms-transition: all .35s ease out;
 	transition: all .35s ease out;
 }
 
-/*.banner-text:hover {
+.banner-text:hover {
 	background-color: #fff;
 	border: .1px solid #0a0c12;
 	color: #0a0c12;
-}*/
+}
 
 .banner-text:hover .banner-background {
 	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 10 10'> <path d='M0 10 L0 0 L10 0' fill='#0a0c12' /></svg>") center center no-repeat;
@@ -816,7 +817,6 @@ figure#project-6 {
 	display: inline-block;
 	vertical-align: top;
 	border: 1px solid #0a0c12;
-	/*max-height: 400px;*/
 	margin: 30px auto 0px auto;
 	overflow: hidden;
 	text-align: center;
@@ -841,10 +841,6 @@ figure#project-6 {
 
 .thumbnail img {
 	width: 100%;
-}
-
-.project-content .thumbnail:hover {
-	border: 2px solid #0a0c12;
 }
 
 .project-content .half {

@@ -56,7 +56,7 @@ var windowHeight = $(window).height();
                 scale = 1;
 
                 if (isDesktop | isTablet) {
-                    container.find('.banner-container').css({transform: 'scale('+(1-scale/3.5)+')'});
+                    container.find('.banner-container').css({transform: 'scale('+(1-scale/4)+')'});
                     container.find('.banner-text').css({'margin-top': -150+scale*400});
                 } else {
                     container.find('.banner-container').css({transform: ''});
@@ -72,16 +72,6 @@ var windowHeight = $(window).height();
                 //     }
                 // }
 
-                aboutPosition = $('#about').offset().top;
-                if (windowWidth >= 480) {
-                    if (scrollTop > aboutPosition) {
-                        $('#nav-container').css({'position': 'fixed'});
-                    } else {
-                        $('#nav-container').css({'position': 'relative'});
-
-                    }
-                }
-
                 if ($('.project-page')[0]) {
                     container.find('.banner-background').css({opacity: scale/2});
                 } else {
@@ -94,6 +84,14 @@ var windowHeight = $(window).height();
    -----------------------------------------------------*/
     $('#nav-logo').click(function(){
         $("body").stop(true,true).animate({ scrollTop: 0 }, '1200', 'swing');
+    });
+
+/* "Banner Text" CTA
+   -----------------------------------------------------*/
+    $('.banner-text').click(function(){
+        console.log("hi");
+        aboutPosition = $('#about').offset().top;
+        $("html, body").animate({scrollTop:aboutPosition}, '500', 'swing');
     });
 
 
