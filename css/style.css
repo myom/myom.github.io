@@ -134,9 +134,8 @@ a {
 }
 
 #inner-polygon:hover {
-	fill: #f58a52;
-	stroke: #f58a52;
-	stroke-width: 5;
+	fill: #aaa;
+	stroke: #aaa;
 }
 
 
@@ -182,11 +181,11 @@ a {
 	transition: all .35s ease out;
 }
 
-.banner-text:hover {
+/*.banner-text:hover {
 	background-color: #fff;
 	border: .1px solid #0a0c12;
 	color: #0a0c12;
-}
+}*/
 
 .banner-text:hover .banner-background {
 	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 10 10'> <path d='M0 10 L0 0 L10 0' fill='#0a0c12' /></svg>") center center no-repeat;
@@ -369,8 +368,10 @@ figure.project p {
 }
 
 figure.project h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 	text-transform: uppercase;
-	font-weight: 800;
+	letter-spacing: 4px;
 }
 
 figure.project p {
@@ -407,18 +408,26 @@ figure.project:hover p {
 }
 
 figure#project-1 {
-	background: #826159;
+	background: #1B60A5;
 }
 
 figure#project-2 {
-	background: #5994CE;
+	background: #1E2127;
 }
 
 figure#project-3 {
-	background: #BED9F9;
+	background: #826159;
 }
 
 figure#project-4 {
+	background: #5994CE;
+}
+
+figure#project-5 {
+	background: #BED9F9;
+}
+
+figure#project-6 {
 	background: #E5726B;
 }
 
@@ -565,7 +574,6 @@ figure#project-4 {
 
 .arrow:hover h3 {
 	opacity: 1;
-	color: #e8c24b;
 	-webkit-transition-delay: 0.1s;
 	transition-delay: 0.1s;
 	-webkit-transform: translateX(0);
@@ -601,10 +609,6 @@ figure#project-4 {
 	z-index: 2;
 }
 
-.arrow.prev:hover .inner-arrow:before {
-	border-right: 12px solid #e8c24b;
-}
-
 .arrow.next:before {
 	display: block;
 	position: absolute;
@@ -626,10 +630,6 @@ figure#project-4 {
 	border-left: 12px solid #fff;
 	content: '';
 	z-index: 2;
-}
-
-.arrow.next:hover .inner-arrow:before {
-	border-left: 12px solid #e8c24b;
 }
 
 /* Project Banner */
@@ -726,6 +726,17 @@ figure#project-4 {
 	max-width: 1000px;
 }
 
+.inner h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.inner h3 {
+	text-decoration: italic;
+}
+
 .project-details .inner .col {
 	display: inline-block;
 	width: 33%;
@@ -805,8 +816,8 @@ figure#project-4 {
 	display: inline-block;
 	vertical-align: top;
 	border: 1px solid #0a0c12;
-	max-height: 400px;
-	margin: 30px auto 30px auto;
+	/*max-height: 400px;*/
+	margin: 30px auto 0px auto;
 	overflow: hidden;
 	text-align: center;
 	-webkit-transition: all .2s ease-out;
@@ -969,6 +980,97 @@ figure#project-4 {
 	background: url('../img/diagmond.png') center center;
 	height: 400px;
 }
+
+.tabs {
+	position: relative;
+	width: 100%;
+	margin: 5px 0 10px;
+}
+
+.tabs nav {
+	text-align: center;
+}
+
+.tabs nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+.tabs nav ul li {
+	border: 1px solid #0a0c12;
+	border-bottom: none;
+	margin: 0 2px;
+	display: block;
+	float: left;
+	position: relative;
+}
+
+.tabs nav li.tab-current {
+	box-shadow: inset 0 5px #0a0c12;
+	border-bottom: none;
+	z-index: 100;
+}
+
+.tabs nav li.tab-current:before,
+.tabs nav li.tab-current:after {
+	content: '';
+	position: absolute;
+	height: 1px;
+	right: 100%;
+	bottom: 0;
+	width: 1000px;
+	background: #0a0c12;
+}
+
+.tabs nav li.tab-current:after {
+	right: auto;
+	left: 100%;
+	width: 1000px;
+}
+
+.tabs nav a {
+	color: #ccc;
+	text-decoration: none;
+	display: block;
+	font-size: 24px;
+	line-height: 2.5;
+	padding: 0 1.25em;
+	white-space: nowrap;
+}
+
+.tabs nav a:hover {
+	color: #768e9d;
+}
+
+.tabs nav li.tab-current a {
+	color: #0a0c12;
+	font-weight: 400;
+}
+
+.content section {
+	display: none;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.content section:before {
+	content: '';
+	display: table;
+}
+
+/* Fallback example */
+.no-js .content section {
+	display: block;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #0a0c12;
+}
+
+.content section.content-current {
+	display: block;
+}
+
 
 /******************************************************/
 /* LIGHTBOX
