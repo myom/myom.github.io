@@ -23,6 +23,10 @@ a {
 	transition: all .35s ease-out;
 }
 
+li {
+	line-height: 24px;
+}
+
 .main {
 	overflow: hidden;
 }
@@ -43,6 +47,10 @@ a {
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	margin: 0;
+}
+
+.top-filler {
+	height: 57px;
 }
 
 /* NAV
@@ -70,6 +78,7 @@ a {
 
 #nav-links li {
 	display: inline-block;
+	line-height: normal;
 }
 
 #nav-links a {
@@ -143,7 +152,7 @@ a {
    -----------------------------------------------------*/
 .banner {
 	width: 100%;
-	height: 100vh;
+	height: calc(100vh - 57px);
 	overflow: hidden;
 	-webkit-transform: scale(1.35);
 	-ms-transform: scale(1.35);
@@ -154,14 +163,14 @@ a {
 	background: url('../img/arches.png') center center;
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: calc(100vh - 57px);
 }
 
 .banner-background {
    	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 10 10'> <path d='M0 10 L10 10 L10 0' fill='#0a0c12' /></svg>") center center no-repeat;
     background-size: 100% 100%, auto;
     width: 100%;
-	height: 100vh;
+	height: calc(100vh - 57px);
 	opacity: 0.8;
 }
 
@@ -263,7 +272,7 @@ a {
 	padding: 60px 5% 50px 5%;
 	border-top: 1px solid #0a0c12;
 	background: #E7E7E7;
-	font-size: 1.8em;
+	font-size: 1.6em;
 	text-align: center;
 	height: auto;
 	position: relative;
@@ -311,7 +320,7 @@ a {
 /* WORK
    -----------------------------------------------------*/
 #work {
-	font-size: 1.8em;
+	font-size: 1.6em;
 	position: relative;
 	border-bottom: 1px solid #0a0c12;
 }
@@ -413,7 +422,7 @@ figure#project-1 {
 }
 
 figure#project-2 {
-	background: #1E2127;
+	background: #30446B;
 }
 
 figure#project-3 {
@@ -439,9 +448,9 @@ figure#project-6 {
 	height: 290px;
 	width: 100%;
 	background: url('../img/arches.png') fixed;
-	padding: 75px 0;
+	padding: 85px 0;
 	color: #0a0c12;
-	font-size: 18px;
+	font-size: 1.6em;
 }
 
 #contact h2 {
@@ -651,6 +660,16 @@ figure#project-6 {
 	background: none;
 }
 
+#wyndham-consumer .banner,
+#wyndham-consumer .banner-container {
+	background: #1B60A5;
+}
+
+#wyndham-enterprise .banner,
+#wyndham-enterprise .banner-container {
+	background: #30446B;
+}
+
 #pieces-of-there .banner,
 #pieces-of-there .banner-container {
 	background: #826159;
@@ -680,6 +699,11 @@ figure#project-6 {
 	top: 50px;
 }
 
+#wyndham-consumer .banner-container img {
+	margin-top: 77px;
+	max-width: 1040px;
+}
+
 #knosey .banner-container img {
 	margin-top: 75px;
 	top: 0;
@@ -694,23 +718,29 @@ figure#project-6 {
 }
 
 .project-client .text-box {
-	max-width: 480px;
+	max-width: 800px;
 	margin: 0 auto;
 	padding: 60px 0;
 }
 
 .project-client h2 {
+	font-family: Raleway;
 	text-transform: uppercase;
-	letter-spacing: 6px;
+	letter-spacing: 3px;
 	font-size: 24px;
-	font-weight: 600;
+	font-weight: 700;
 	margin-top: 0;
 }
 
 .project-client p {
-	font-size: 18px;
+	font-size: 1.6em;
 	line-height: 30px;
 	margin-bottom: 0;
+}
+
+.project-client a {
+    color: #0a0c12;
+    text-decoration: underline;
 }
 
 .project-details {
@@ -722,6 +752,7 @@ figure#project-6 {
 }
 
 .inner {
+	font-size: 16px;
 	margin: 0 auto;
 	padding: 60px;
 	max-width: 1000px;
@@ -740,7 +771,7 @@ figure#project-6 {
 
 .project-details .inner .col {
 	display: inline-block;
-	width: 33%;
+	width: 32%;
 	vertical-align: top;
 }
 
@@ -807,7 +838,7 @@ figure#project-6 {
 
 .not-thumbnail {
 	display: block;
-	margin: 30px auto 30px auto;
+	margin: 20px auto 20px auto;
 	-webkit-transition: all .2s ease-out;
 	-ms-transition: all .2s ease-out;
 	transition: all .2s ease-out;
@@ -817,7 +848,7 @@ figure#project-6 {
 	display: inline-block;
 	vertical-align: top;
 	border: 1px solid #0a0c12;
-	margin: 30px auto 0px auto;
+	margin: 20px auto 20px auto;
 	overflow: hidden;
 	text-align: center;
 	-webkit-transition: all .2s ease-out;
@@ -1047,8 +1078,9 @@ figure#project-6 {
 
 .content section {
 	display: none;
-	max-width: 1000px;
+	max-width: 800px;
 	margin: 0 auto;
+	padding-top: 20px;
 }
 
 .content section:before {
@@ -1251,7 +1283,7 @@ figure#project-6 {
 	}
 
 	.arrow.prev:hover .inner-arrow:before {
-		border-right: 9.333333px solid #e8c24b;
+		border-right: 9.333333px solid #fff;
 	}
 
 
@@ -1270,7 +1302,7 @@ figure#project-6 {
 	}
 
 	.arrow.next:hover .inner-arrow:before {
-		border-left: 9.333333px solid #e8c24b;
+		border-left: 9.333333px solid #fff;
 	}
 
 	.project-client .text-box {
@@ -1312,6 +1344,10 @@ figure#project-6 {
 @media only screen and (max-width: 480px) {
 
 	/* General */
+	.top-filler {
+		height: 0px;
+	}
+
 	#nav-container {
 		position: relative;
 	}
@@ -1418,7 +1454,7 @@ figure#project-6 {
 	}
 
 	.arrow.prev:hover .inner-arrow:before {
-		border-right: 7.6px solid #e8c24b;
+		border-right: 7.6px solid #fff;
 	}
 
 	.arrow.next:before {
@@ -1436,13 +1472,17 @@ figure#project-6 {
 	}
 
 	.arrow.next:hover .inner-arrow:before {
-		border-left: 7.6px solid #e8c24b;
+		border-left: 7.6px solid #fff;
 	}
 
 	.banner-container img {
 		margin-top: 30px;
-		top: 20px;
 	}
+
+/*	#wyndham-consumer .banner-container img {
+		margin-top: 105px;
+		top: -50px;
+	}*/
 
 	#knosey .banner-container img {
 		margin-top: 30px;
