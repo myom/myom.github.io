@@ -110,6 +110,27 @@ var windowHeight = $(window).height();
         $("html, body").stop(true, true).animate({ scrollTop: sprintPosition }, '1200', 'swing');
     });
 
+/* WVO Next/Prev Tab Toggler
+   -----------------------------------------------------*/
+    $('.next-tab a').on("click", function(){
+        var href = $(this).attr('href');
+        var tabsPosition = $(href).offset().top - $('#nav-container').height();
+        $("html, body").stop(true, true).animate({ scrollTop: tabsPosition }, '1200', 'swing');
+
+        setTimeout(function() {
+           $('.tab-current').next().trigger('click');
+        }, 700);
+    });
+
+    $('.prev-tab a').on("click", function(){
+        var href = $(this).attr('href');
+        var tabsPosition = $(href).offset().top - $('#nav-container').height();
+        $("html, body").stop(true, true).animate({ scrollTop: tabsPosition }, '1200', 'swing');
+
+        setTimeout(function() {
+           $('.tab-current').prev().trigger('click');
+        }, 700);        
+    });
 
 /* Lightbox
    -----------------------------------------------------*/
