@@ -62,16 +62,6 @@ var windowHeight = $(window).height();
                     container.find('.banner-container').css({transform: ''});
                 }
 
-                // if (windowWidth <= 600) {
-                //     aboutPosition = $('#about').offset().top;
-                //     if (scrollTop > aboutPosition) {
-                //         console.log(scrollTop);
-                //         $('#nav-container').css({'position': 'relative'});
-                //     } else {
-                //         $('#nav-container').css({'position': 'fixed'});
-                //     }
-                // }
-
                 if ($('.project-page')[0]) {
                     container.find('.banner-background').css({opacity: scale/2});
                 } else {
@@ -89,8 +79,13 @@ var windowHeight = $(window).height();
 /* "Banner Text" CTA
    -----------------------------------------------------*/
     $('.banner-text').click(function(){
-        console.log("hi");
-        aboutPosition = $('#about').offset().top;
+
+        if (windowWidth > 480) {
+            aboutPosition = $('#about').offset().top - $('#nav-container').height();
+        } else {
+            aboutPosition = $('#about').offset().top;
+        }
+
         $("html, body").animate({scrollTop:aboutPosition}, '500', 'swing');
     });
 
@@ -98,7 +93,7 @@ var windowHeight = $(window).height();
 /* Link to contact footer
    -----------------------------------------------------*/
     $('#nav-contact').click(function(){
-        contactPosition = $('#contact').offset().top;
+        contactPosition = $('#contact').offset().top - $('#nav-container').height();
         $("html, body").stop(true, true).animate({ scrollTop: contactPosition }, '1200', 'swing');
     });
 

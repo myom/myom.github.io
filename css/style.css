@@ -1391,10 +1391,6 @@ figure#project-6 {
 @media only screen and (max-width: 400px) {
 
 	/* General */
-	#nav-container {
-		position: relative;
-	}
-
 	#nav-contact svg {
 		display: none;
 	}
