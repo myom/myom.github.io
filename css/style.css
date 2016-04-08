@@ -447,7 +447,7 @@ figure#project-6 {
 #contact {
 	height: 290px;
 	width: 100%;
-	background: url('../img/arches.png') fixed;
+	background: url('../img/swirl_pattern.png') fixed;
 	padding: 85px 0;
 	color: #0a0c12;
 	font-size: 1.6em;
@@ -1331,7 +1331,7 @@ figure#project-6 {
 		display: none;
 	}
 
-	.design-sprint .inactive {
+	.design-sprint .i#cnactive {
 		display: none;
 	}
 
