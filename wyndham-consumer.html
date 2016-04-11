@@ -150,12 +150,13 @@
 						<p>Initially, our team explored the option to view availability for all room types at a single resort at the same time. The user could scan a resort's calendar in order to determine their desired room on the desired date range. We ultimately concluded that this treatment would display too much information and confuse the user since it's not quite representative of the standard monthly calendar.</p>
 						
 						</br>
-						<div class="center"><img src="img/wyndham-consumer/Availability_Calendar_Old.png" alt="All Rooms At Once"></div>
+						<div class="three-thirds"><img src="img/wyndham-consumer/Availability_Calendar_Old.png" alt="All Rooms At Once"></div>
 			
-						<p>Subsequently, we proceeded with allowing the user to toggle through and view available dates for one room type at a time.</p>
+						<p>Subsequently, we proceeded with allowing the user to toggle through and view available dates for one room type at a time. From here, the user can select a room type and dates via a three-step process.</p>
 						
 						</br>
-						<div class="center"><img src="img/wyndham-consumer/Availability_Calendar.png" alt="One Room At A Time"></div>
+						<div class="two-thirds"><img src="img/wyndham-consumer/Availability_Calendar.png" alt="One Room At A Time"></div>
+						<div class="one-third"><img src="img/wyndham-consumer/M_Availability_Calendar.png" alt="One Room At A Time (Mobile)"></div>
 			
 <!-- 						<p>Shown here is an error state that captures the check-in day rule at this particular resort. I initially wanted to take a preventative approach and display this selected date (Sept. 16) as unavailable/unselectable. On hover, a message could indicate why exactly the room type is unavailable on this date. However, we were told that WVO's CMS wouldn't be able to display multiple error messages if such a case arises, so we adopted a responsive erroring approach on selection of a date.</p>
 			
@@ -165,22 +166,26 @@
 						<p>On selection of a check-in date, the system narrows down booking restrictions and enforces the resort's maximum length of stay rule. Here, the resort allows stays up to 6 nights:</p>
 			
 						</br>
-						<div class="center"><img src="img/wyndham-consumer/Availability_Calendar3.png" alt="Selected Check-In Date"></div>
+						<div class="two-thirds"><img src="img/wyndham-consumer/Availability_Calendar3.png" alt="Selected Check-In Date"></div>
+						<div class="one-third"><img src="img/wyndham-consumer/M_Availability_Calendar3.png" alt="Selected Check-In Date (Mobile)"></div>
 			
 						<p>On selection of valid check-in and check-out dates, the user can proceed to book the room, or if desired, run a new search with these dates. I felt that including the latter option could be useful, since users may come to determine their dates of travel in the process of using the availability calendar. If this becomes the case, the user may want to view other resorts with the selected date range in mind.</p>
 
 						</br>
-						<div class="center"><img src="img/wyndham-consumer/Availability_Calendar4.png" alt="Valid Dates Selected"></div>
+						<div class="two-thirds"><img src="img/wyndham-consumer/Availability_Calendar4.png" alt="Valid Dates Selected"></div>
+						<div class="one-third"><img src="img/wyndham-consumer/M_Availability_Calendar4.png" alt="Valid Dates Selected (Mobile)"></div>
 
 						<p>Shown here is a state to view information about a specific room type. Initially, I designed it to load in place of the calendar so the user can toggle between and compare various room types. But since the nature of the information is auxiliary to the core experience of selecting dates, I modified the state to exist as an overlay instead.</p>
 
 						</br>
-						<div class="center"><img src="img/wyndham-consumer/Availability_Calendar5.png" alt="Unit Information"></div>
+						<div class="two-thirds"><img src="img/wyndham-consumer/Availability_Calendar5.png" alt="Unit Information"></div>
+						<div class="one-third"><img src="img/wyndham-consumer/M_Availability_Calendar5.png" alt="Unit Information (Mobile)"></div>	
 
-						<p>Shown below is the availability calendar in the context of the search results page.</p>
+						<p>Shown below is the availability calendar in the context of the search results page. Note that on desktop, the calendar for the first resort is exposed by default. On mobile, the calendar is contained within an overlay experience.</p>
 
 						</br>
-						<div class="center"><img src="img/wyndham-consumer/Availability_Search_Results.png" alt="Availability Search Results"></div>
+						<div class="two-thirds"><img src="img/wyndham-consumer/Availability_Search_Results.png" alt="Availability Search Results"></div>
+						<div class="one-third"><img src="img/wyndham-consumer/M_Availability_Search_Results.png" alt="Availability Search Results (Mobile)"></div>
 
 						</br>
 
@@ -203,7 +208,14 @@
 						<p>Given that this feature is intended more for exploring than it is for finding a specific resort, we figured that users would want to scout out and plan potential stays based on location (e.g., resort near Disney World). Thus, we opted for a dual list and map experience to encourage users to explore resorts visually--a la AirBnB, Yelp, Foursquare, etc.
 						</p>
 
-						<div class="center"><div class="thumbnail"><img src="img/wyndham-consumer/Explore_Results.png" alt="List + Map View"></div></div>
+						</br>
+						<div class="three-thirds border"><img src="img/wyndham-consumer/Explore_Results.png" alt="List + Map View"></div>
+
+						<p>On mobile, users can toggle between these list and map view states.</p>
+						</br>
+						<div class="left-half"><img src="img/wyndham-consumer/M_Explore_Results.png" alt="List View (Mobile)"></div>
+						<div class="right-half"><img src="img/wyndham-consumer/M_Explore_Results_Map.png" alt="Map View (Mobile)"></div>
+
 
 						<p>Filters were configured into three main categories: Location, Vacation Experience, and Special Needs.</p>
 
@@ -222,7 +234,7 @@
 						</br>
 						<h3>"Compare Wyndham's portfolio of resorts."</h3>						
 
-						<p>To further the ability for owners to explore resorts, we created a modular compare tool that is accessible on the results page and launches as an overlay on select of 1-3 resorts to compare.</p>
+						<p>To further the ability for owners to explore resorts, we created a modular compare tool (desktop only) that is accessible on the results page and launches as an overlay on select of 1-3 resorts to compare.</p>
 
 						<p>Here, the user has only selected one resort to compare. The right rail includes a search for any resort by its name and three accordion-style tabs: (1) results from the existing Explore Resorts search, (2) resorts that the user has added to their wishlist, and (3) system-generated suggestions.</p>
 						<div class="center"><div class="thumbnail"><img src="img/wyndham-consumer/Explore_Compare_1.png" alt="Compare One Resort"></div></div>
@@ -295,15 +307,18 @@
 					
 						</br>
 						<h2>Landing Page</h2>
-						<div class="center"><div class="thumbnail"><img src="img/wyndham-consumer/Owner101-Landing.png" alt="Owner 101 Landing Page"></div></div>
+						<div class="two-thirds border"><img src="img/wyndham-consumer/Owner101-Landing.png" alt="Owner 101 Landing Page"></div>
+						<div class="one-third" style="height: 1413.140px; overflow: hidden"><img src="img/wyndham-consumer/M_Owner101-Landing.png" alt="Owner 101 Landing Page (Mobile)"></div>
 
-						</br>
+						</br></br>
 						<h2>Knowledge Base</h2>
-						<div class="center"><div class="thumbnail"><img src="img/wyndham-consumer/Owner101-KnowledgeBase.png" alt="Owner 101 Knowledge Base"></div></div>
+						<div class="two-thirds border"><img src="img/wyndham-consumer/Owner101-KnowledgeBase.png" alt="Owner 101 Knowledge Base"></div>
+						<div class="one-third" style="height: 992.688px; overflow: hidden"><img src="img/wyndham-consumer/M_Owner101-KnowledgeBase.png" alt="Owner 101 Knowledge Base (Mobile)"></div>
 
-						</br>
+						</br></br>
 						<h2>Knowledge Base: Article Page</h2>
-						<div class="center"><div class="thumbnail"><img src="img/wyndham-consumer/Owner101-ArticlePage.png" alt="Owner 101 Article Page"></div></div>
+						<div class="two-thirds border"><img src="img/wyndham-consumer/Owner101-ArticlePage.png" alt="Owner 101 Article Page"></div>
+						<div class="one-third" style="height: 966.172px; overflow: hidden"><img src="img/wyndham-consumer/M_Owner101-ArticlePage.png" alt="Owner 101 Article Page (Mobile)"></div>
 
 					</section>
 
