@@ -160,7 +160,7 @@ li {
 }
 
 .banner-container {
-	background: url('../img/arches.png') center center;
+	background: url('../img/swirl_pattern.png') center center;
 	position: relative;
 	width: 100%;
 	height: calc(100vh - 57px);
@@ -447,7 +447,7 @@ figure#project-6 {
 #contact {
 	height: 290px;
 	width: 100%;
-	background: url('../img/arches.png') fixed;
+	background: url('../img/swirl_pattern.png') fixed;
 	padding: 85px 0;
 	color: #0a0c12;
 	font-size: 1.6em;
