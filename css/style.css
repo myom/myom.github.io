@@ -445,6 +445,11 @@ figure#project-7 {
 	background: #E5726B;
 }
 
+figure#project-8 {
+	background-color: #999;
+	cursor: auto;
+}
+
 
 /* CONTACT
    -----------------------------------------------------*/
@@ -1272,6 +1277,10 @@ figure#project-7 {
 
 	figure.project p {
 		font-size: 1em;
+	}
+
+	figure#project-8 {
+		display: none;
 	}
 
 }
