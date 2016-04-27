@@ -426,18 +426,22 @@ figure#project-2 {
 }
 
 figure#project-3 {
-	background: #826159;
+	background: #1F87E2;
 }
 
 figure#project-4 {
-	background: #5994CE;
+	background: #826159;
 }
 
 figure#project-5 {
-	background: #BED9F9;
+	background: #5994CE;
 }
 
 figure#project-6 {
+	background: #BED9F9;
+}
+
+figure#project-7 {
 	background: #E5726B;
 }
 
@@ -670,6 +674,11 @@ figure#project-6 {
 	background: #30446B;
 }
 
+#imci .banner,
+#imci .banner-container {
+	background: #1F87E2;
+}
+
 #pieces-of-there .banner,
 #pieces-of-there .banner-container {
 	background: #826159;
@@ -697,6 +706,10 @@ figure#project-6 {
 	margin: 0 auto;
 	margin-top: 65px;
 	top: 50px;
+}
+
+#imci .banner-container img {
+	width: 60.6%;
 }
 
 #wyndham-consumer .banner-container img {
@@ -887,6 +900,10 @@ figure#project-6 {
 
 .border {
 	border: 1px solid #0a0c12;
+}
+
+.centered {
+	text-align: center;
 }
 
 .three-thirds {
@@ -1557,6 +1574,12 @@ figure#project-6 {
 
 	.banner-container img {
 		margin-top: 30px;
+	}
+
+	#imci .banner-container img {
+		width: 70%;
+		margin-top: 75px;
+		top: -25px;
 	}
 
 	#wyndham-consumer .banner-container img {
